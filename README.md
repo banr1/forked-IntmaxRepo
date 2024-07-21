@@ -1,4 +1,6 @@
-# IntmaxRepo
+# Forked IntmaxRepo
+
+This repository is a fork of the original [IntmaxRepo](https://github.com/mashharuki/IntmaxRepo).
 
 ステートレスなロールアップ INTMAX および INTMAX Wallet を調査・学習するためのリポジトリです。
 
@@ -37,6 +39,7 @@ node のバージョンは、`18.18.0` 以上であることが必要です！
       デプロイしたコントラクトを Verify するのに使うので以下サイトにアクセスして API キーを作成する。
 
       **ScrollScan API Key**
+
       - [https://scrollscan.com/myapikey](https://scrollscan.com/myapikey)
 
       ![](./docs/imgs/handson/1.png)
@@ -44,6 +47,7 @@ node のバージョンは、`18.18.0` 以上であることが必要です！
   3.  OpenZepplin Defender にログインして ScrollSepolia 上で Relayer を作成し、API キーを取得すること。
 
       **OpenZeppelin Defender Relayer**
+
       - [https://defender.openzeppelin.com/v2/#/manage/relayers](https://defender.openzeppelin.com/v2/#/manage/relayers)
 
       ![](./docs/imgs/handson/2.png)
@@ -51,16 +55,17 @@ node のバージョンは、`18.18.0` 以上であることが必要です！
       ＊後ほど環境変数に使用するため以下の情報をコピペしておく。
       ![](./docs/imgs/handson/defender_api.png)
 
-  4.  上記で作成した Relayer のウォレットアドレスに少額の ETH （0.5 Sepolia ETHくらい）を送金する(Scroll Sepolia 上で送金してください！！)。
+  4.  上記で作成した Relayer のウォレットアドレスに少額の ETH （0.5 Sepolia ETH くらい）を送金する(Scroll Sepolia 上で送金してください！！)。
 
-      ****OpenZeppelin** Defender で作成した Relayer アドレス - ScrollScan**
+      \***\*OpenZeppelin** Defender で作成した Relayer アドレス - ScrollScan\*\*
+
       - [https://sepolia.scrollscan.dev/address/0x1B38AB190EDf2bb4BcB2EC0b6639426731861581](https://sepolia.scrollscan.dev/address/0x1B38AB190EDf2bb4BcB2EC0b6639426731861581)
 
       ![](./docs/imgs/handson/3.png)
 
       各作成した Relayer のアドレスが表示されているはずなのでそのアドレスに入金すること
 
-  5. コントラクトのデプロイに使用するウォレットアドレスにも少額の　ETH （0.5 Sepolia ETHくらい）を送金する(Scroll Sepolia 上で送金してください！！)。
+  5.  コントラクトのデプロイに使用するウォレットアドレスにも少額の ETH （0.5 Sepolia ETH くらい）を送金する(Scroll Sepolia 上で送金してください！！)。
 
   6.  環境変数の設定
 
@@ -125,7 +130,7 @@ node のバージョンは、`18.18.0` 以上であることが必要です！
   yarn backend test
   ```
 
-- スマートコントラクト　デプロイ
+- スマートコントラクト デプロイ
 
   ```bash
   yarn backend deploy --network scrollSepolia
@@ -147,7 +152,7 @@ node のバージョンは、`18.18.0` 以上であることが必要です！
   ※ デプロイがうまく行かないようであれば、すでに貼り付けてある値をそのまま使用してください。
 
   ```ts
-  export const FORWARDER_CONTRACT_ADDRESS =　<デプロイしたアドレス>;
+  export const FORWARDER_CONTRACT_ADDRESS = <デプロイしたアドレス>;
   export const HELLOWORLD_CONTRACT_ADDRESS = <デプロイしたアドレス>;
   ```
 
@@ -539,5 +544,5 @@ const gasslessRequest = async () => {
 28. [ヴィタリック、スケーリングソリューション「Plasma」の評価を再検討すべきと主張](https://www.neweconomy.jp/posts/353238)
 29. [GitHub - Plasma ホワイトペーパー日本語訳](https://github.com/mashharuki/plasma-whitepaper-jp)
 30. [Medium - Recursive Zero-Knowledge Proofs](https://scryptplatform.medium.com/recursive-zero-knowledge-proofs-27f2d934f953)
-31. [Intmax Wallet SDKのサンプル実装例を取り上げたブログ記事](https://medium.com/@intmaxafrica/how-to-integrate-intmax-wallet-into-your-dapp-using-rainbowkit-b363eb9c6fce)
+31. [Intmax Wallet SDK のサンプル実装例を取り上げたブログ記事](https://medium.com/@intmaxafrica/how-to-integrate-intmax-wallet-into-your-dapp-using-rainbowkit-b363eb9c6fce)
 32. [INTMAX Wallet SDK Sampple - GitHub - Sports-Voting-Demo](https://github.com/emmaglorypraise/Sports-Voting-Demo/tree/main)

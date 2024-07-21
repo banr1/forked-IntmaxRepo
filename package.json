@@ -1,10 +1,14 @@
 {
-  "name": "IntmaxRepo",
+  "name": "intmax-repo",
   "version": "1.0.0",
   "main": "index.js",
   "private": true,
-  "repository": "https://github.com/mashharuki/PushFi.git",
+  "repository": "https://github.com/banr1/forked-IntmaxRepo/tree/main",
   "author": "Haruki Kondo",
+  "description": "IntmaxRepo forked repository. Original repository is https://github.com/mashharuki/IntmaxRepo",
+  "contributors": [
+    "banri"
+  ],
   "license": "MIT",
   "workspaces": [
     "pkgs/*"
