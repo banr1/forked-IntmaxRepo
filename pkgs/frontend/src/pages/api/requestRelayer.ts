@@ -34,7 +34,7 @@ export default async function handler(
   res: NextApiResponse
 ) {
   console.log(
-    " ========================================= [RequestRaler: START] =============================================="
+    " ========================================= [RequestRelayer: START] =============================================="
   );
 
   const body = req?.body;
