@@ -105,3 +105,19 @@ info Visit https://yarnpkg.com/en/docs/cli/workspace for documentation about thi
 error Command failed with exit code 1.
 info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
 ```
+
+I tried to deploy again, and it was successful.
+
+The reason for the first error was probably that the wallet balance was insufficient.
+
+```bash
+~/workspace/forked-repositories/forked-IntmaxRepo $ yarn backend deploy --network scrollSepolia
+yarn run v1.22.22
+$ yarn workspace backend deploy --network scrollSepolia
+$ hardhat run scripts/deploy.ts --network scrollSepolia
+ ============================================== [start] ================================================
+ SampleForwarder deployed to 0xb0ad99037A7783035306f5284B88eE4f2268e036
+ HelloWorld deployed to 0x25E0EEc9224E4Ff5D3c14F1BCE06Ee8009c9Ad8E
+ =============================================== [end]  ===============================================
+✨  Done in 11.63s.
+```
