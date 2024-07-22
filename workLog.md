@@ -121,3 +121,32 @@ $ hardhat run scripts/deploy.ts --network scrollSepolia
  =============================================== [end]  ===============================================
 ✨  Done in 11.63s.
 ```
+
+## Update constants in frontend
+
+I updated the constants in the frontend.
+
+```bash
+export const FORWARDER_CONTRACT_ADDRESS =
+  "0xb0ad99037A7783035306f5284B88eE4f2268e036";
+export const HELLOWORLD_CONTRACT_ADDRESS =
+  "0x25E0EEc9224E4Ff5D3c14F1BCE06Ee8009c9Ad8E";
+```
+
+## Verify contracts
+
+I tried to verify the contracts on Scroll Sepolia, but they were already verified.
+
+```bash
+~/workspace/forked-repositories/forked-IntmaxRepo $ yarn backend verify --network scrollSepolia
+yarn run v1.22.22
+$ yarn workspace backend verify --network scrollSepolia
+$ npx hardhat verify --network scrollSepolia
+ ============================================== [start] ================================================
+The contract 0xb0ad99037A7783035306f5284B88eE4f2268e036 has already been verified.
+https://sepolia.scrollscan.com/address/0xb0ad99037A7783035306f5284B88eE4f2268e036#code
+The contract 0x25E0EEc9224E4Ff5D3c14F1BCE06Ee8009c9Ad8E has already been verified.
+https://sepolia.scrollscan.com/address/0x25E0EEc9224E4Ff5D3c14F1BCE06Ee8009c9Ad8E#code
+ =============================================== [end]  ===============================================
+✨  Done in 3.09s.
+```
