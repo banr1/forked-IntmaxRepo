@@ -1,5 +1,7 @@
 # Work Log
 
+- [Event Page](https://lu.ma/c18ubb0n)
+- [Event Slide](https://www.canva.com/design/DAGGhlUKo4k/B-p8a_dfUjowiCPdp6XDMg/view?utm_content=DAGGhlUKo4k&utm_campaign=designshare&utm_medium=link&utm_source=editor)
 - [ScrollScan of `banr1.eth`](https://sepolia.scrollscan.dev/address/0x939461c901a2c882079c84565e42fce064847aa3)
 - [ScrollScan API Key](https://scrollscan.com/myapikey)
 - [OpenZeppelin Defender Relayer](https://defender.openzeppelin.com/v2/#/manage/relayers)
@@ -275,4 +277,17 @@ request: {
 true
 tx hash: 0x4991a5952837b47116e73fe08c1f82c2cb318b19ab32f97146fb79f27ad07f7c
  ========================================= [RequestRaler: END] ==============================================
+```
+
+And I confirmed that the text was updated.
+
+```bash
+~/workspace/forked-repositories/forked-IntmaxRepo $ yarn backend getText --network scrollSepolia
+yarn run v1.22.22
+$ yarn workspace backend getText --network scrollSepolia
+$ npx hardhat getText --network scrollSepolia
+ ============================================== [start] ================================================
+text: hello INTMAXX!!
+ =============================================== [end]  ===============================================
+✨  Done in 3.80s.
 ```
